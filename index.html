@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#07111f">
+<title>Integrated Cybersecurity Threat Analysis Dashboard</title>
+<style>
+:root{--bg:#050b16;--panel:#0b1728;--text:#edf5ff;--muted:#a6b8d0;--line:#233750;--blue:#35aaff;--green:#1ce0b0;--purple:#a17bff;--orange:#ff9a3c}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at 10% 0%,#102747 0,transparent 35%),#050b16;color:var(--text);font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.5}a{color:inherit;text-decoration:none}button{font:inherit;cursor:pointer}.shell{max-width:1500px;margin:auto;padding:22px}.hero{padding:28px 30px;border:1px solid var(--line);border-radius:22px;background:linear-gradient(110deg,#0a1c33,#0a1020);position:relative;overflow:hidden}.eyebrow{font-size:.75rem;letter-spacing:.16em;text-transform:uppercase;color:#69c5ff;font-weight:800}.hero h1{font-size:clamp(1.8rem,4vw,3rem);line-height:1.12;margin:9px 0}.hero p{color:#b5c8df;max-width:850px;margin:0}.pills{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}.pill{border:1px solid var(--line);border-radius:999px;padding:6px 11px;color:#c8d9ee;font-size:.82rem;background:#ffffff05}.section-head{display:flex;justify-content:space-between;align-items:end;gap:12px;margin:26px 2px 13px}.section-head h2{margin:0;font-size:1.25rem}.section-head p{margin:4px 0 0;color:var(--muted);font-size:.9rem}.cards{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}.card{--accent:var(--blue);border:1px solid color-mix(in srgb,var(--accent) 45%,transparent);border-radius:16px;padding:16px;background:linear-gradient(150deg,#0b1a2c,#08111e);min-width:0}.card[data-id="ontology"]{--accent:var(--green)}.card[data-id="insider"]{--accent:var(--purple)}.card[data-id="ids"]{--accent:var(--orange)}.card h3{font-size:.97rem;margin:0 0 6px}.card p{color:#aebfd4;font-size:.82rem;min-height:62px;margin:0 0 13px}.card button,.open-link{display:inline-flex;align-items:center;justify-content:center;gap:8px;border:1px solid color-mix(in srgb,var(--accent) 60%,transparent);border-radius:9px;background:color-mix(in srgb,var(--accent) 17%,#0b1728);color:#f5f9ff;padding:9px 11px;font-size:.83rem;font-weight:750;width:100%}.card button:hover,.open-link:hover{filter:brightness(1.2)}.card .status{color:var(--accent);font-size:.7rem;letter-spacing:.08em;text-transform:uppercase;font-weight:800}.viewer{margin-top:20px;border:1px solid var(--line);border-radius:18px;overflow:hidden;background:#08111e}.viewer-head{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;padding:14px 17px;background:#0c1a2b;border-bottom:1px solid var(--line)}.viewer-title{font-weight:800}.viewer-actions{display:flex;gap:8px;flex-wrap:wrap}.viewer-actions a,.viewer-actions button{border:1px solid #304967;background:#12253b;color:#eaf4ff;padding:8px 11px;border-radius:8px;font-size:.82rem}.viewer-actions .primary{background:#12599b;border-color:#2486d7}.frame-wrap{height:min(76vh,850px);min-height:520px;position:relative;background:#fff}.frame-wrap iframe{display:block;width:100%;height:100%;border:0;background:#fff}.frame-note{display:none;padding:18px;background:#101d2d;color:#bfd0e4;font-size:.9rem}.frame-note.show{display:block}.frame-note a{color:#70c5ff;text-decoration:underline}.bottom{display:grid;grid-template-columns:1.2fr 1fr;gap:12px;margin-top:16px}.info{padding:18px;border:1px solid var(--line);border-radius:15px;background:#091625}.info h3{margin:0 0 9px;font-size:1rem}.info p,.info li{color:#b7c9df;font-size:.87rem}.info ul{margin:0;padding-left:19px}.foot{padding:18px 3px 4px;color:#8198b5;font-size:.78rem}.warning{color:#ffc47c!important}.hidden{display:none!important}
+@media(max-width:1050px){.cards{grid-template-columns:repeat(2,minmax(0,1fr))}.bottom{grid-template-columns:1fr}}
+@media(max-width:620px){.shell{padding:12px}.hero{padding:22px 18px}.cards{grid-template-columns:1fr}.card p{min-height:0}.frame-wrap{height:70vh;min-height:420px}.section-head{align-items:start;flex-direction:column}}
+</style>
+</head>
+<body>
+<div class="shell">
+<header class="hero">
+<div class="eyebrow">Unified Security Intelligence Platform</div>
+<h1>Integrated Cybersecurity<br>Threat Analysis Dashboard</h1>
+<p>A single entry point to your graph analytics, ontology knowledge representation, insider-threat behaviour analysis, and explainable network intrusion detection applications.</p>
+<div class="pills"><span class="pill">◈ Multi-source analysis</span><span class="pill">⌘ Graph intelligence</span><span class="pill">▤ Ontology knowledge</span><span class="pill">◉ Behaviour analytics</span><span class="pill">⬡ Explainable AI</span></div>
+</header>
+
+<div class="section-head"><div><h2>Analysis modules</h2><p>Select a module card to navigate directly to its deployed dashboard.</p></div><span class="pill">One dashboard · Four modules</span></div>
+<section class="cards">
+<article class="card" data-id="graph"><div class="status">Module 01 </div><h3>Graph-Based Threat Analytics</h3><p>Investigate connected events, graph patterns, suspicious entities, and threat technique mappings.</p><a class="open-link" href="https://cyberthreatanalysis-h8v6ekquulwguxruwxjahd.streamlit.app/">↗ Open dashboard</a></article>
+<article class="card" data-id="ontology"><div class="status">Module 02 </div><h3>Ontology Knowledge Representation</h3><p>Represent users, devices, activities, files, URLs, and email evidence as semantic relationships.</p><button type="button" onclick="alert('Ontology module deployment URL has not been provided yet.')">Run locally</button></article>
+<article class="card" data-id="insider"><div class="status">Module 03 </div><h3>Insider Threat &amp; Behaviour Analytics</h3><p>Review behavioural windows and identify potentially anomalous user activity.</p><a class="open-link" href="https://insiderdemo-5zfz5nz7ysatgotbybpbyo.streamlit.app/">↗ Open dashboard</a></article>
+<article class="card" data-id="ids"><div class="status">Module 04 </div><h3>ML-XIDS Intrusion Detection</h3><p>Classify network traffic and inspect explainable model output for intrusion predictions.</p><a class="open-link" href="https://mlxidsproject-9bh2yhgza3khca8iqukjsa.streamlit.app/">↗ Open dashboard</a></article>
+</section>
+
+
+
+<section class="bottom">
+<div class="info"><h3>Integration architecture</h3><p>Integrated landing page → click a module card → browser navigates directly to the selected deployed dashboard.</p><p class="warning">This page provides direct navigation to each independently deployed application. It does not combine their live data, alerts, or model outputs.</p></div>
+<div class="info"><h3>Next steps for full integration</h3><ul><li>Provide the ontology module's deployment URL.</li><li>Expose stable API endpoints from each module for shared metrics and alerts.</li><li>Build a central overview using a common alert schema and timestamps.</li><li>Verify access control, CORS, and deployment security before production use.</li></ul></div>
+</section>
+<footer class="foot">Integrated Cybersecurity Threat Analysis · Standalone HTML dashboard</footer>
+</div>
+
+</body>
+</html>
